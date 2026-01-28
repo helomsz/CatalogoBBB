@@ -1,0 +1,148 @@
+:root {
+  --nav-bg: #ffffff;
+  --nav-text: #1f2937; 
+  --nav-hover: #3b82f6; 
+  --nav-border: #e5e7eb;
+  --shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.containerCabecalho {
+  position: fixed;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 2rem);
+  max-width: 1300px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 999px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  border: 1px solid rgba(255,255,255,0.4);
+  z-index: 100;
+}
+
+.wrapperNavegacao {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1.5rem;
+}
+
+.containerLogo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.iconeLogo {
+  width: 80px; 
+  height: auto;
+  object-fit: contain;
+}
+
+.textoLogo {
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.listaLinks {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.linkNavegacao {
+  position: relative;
+  text-decoration: none;
+  color: var(--nav-text);
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.linkNavegacao::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: var(--nav-hover);
+  transition: width 0.3s ease;
+}
+
+.linkNavegacao:hover::after {
+  width: 100%;
+}
+
+.botaoMenu {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem;
+  color: var(--nav-text);
+}
+
+.botaoFavorio{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.menuMobile {
+  display: none; 
+  background-color: var(--nav-bg);
+  border-top: 1px solid var(--nav-border);
+  flex-direction: column;
+  padding: 1rem;
+  width: 100%;
+}
+
+
+.menuMobile.menuAberto {
+  display: flex; 
+  animation: slideDown 0.3s ease-out;
+}
+
+.linkMobile {
+  text-decoration: none;
+  color: var(--nav-text);
+  padding: 0.75rem 0;
+  font-weight: 500;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.linkMobile:last-child {
+  border-bottom: none;
+}
+
+.linkMobile:hover {
+  color: var(--nav-hover);
+}
+
+
+@media (max-width: 768px) {
+  .listaLinks {
+    display: none;
+  }
+
+  .botaoMenu {
+    display: block;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
