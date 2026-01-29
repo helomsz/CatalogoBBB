@@ -1,6 +1,6 @@
 import React from "react";
 import "./Hero.css";
-
+import {Leaf, Star, Flame, Heart, Brain } from "lucide-react";
 // import imagemFundo from '../../assets/background-hero.png';
 
 const Hero = () => {
@@ -30,9 +30,20 @@ const Hero = () => {
             <div className="videoPlaceholder">
               <span>O VÍDEO VAI AQUI</span>
               <p>em breve</p>
+              {/*
+              Quando tiver o vídeo, troca por:
+              <video
+                src=""
+                autoPlay
+                muted
+                loop
+                playsInline
+              />
+              */}
             </div>
           </div>
         </div>
+
       </div>
     </section>
   );
