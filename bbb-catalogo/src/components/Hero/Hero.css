@@ -1,0 +1,109 @@
+.secaoHero {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: visible; 
+  padding-bottom: 160px;
+}
+
+.containerPrincipal {
+  width: 100%;
+  min-height: 100vh;
+  background: url("../../assets/backgrounds/background.png");
+  background-size: cover;     
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 40px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 0px;
+  text-align: center;
+  overflow: hidden; 
+}
+
+.etiquetaDestaque {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 
+    0 8px 24px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #7155F7;
+  margin-top: 120px;
+  margin-bottom: 14px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  animation: float 4s ease-in-out infinite;
+}
+
+
+.tituloPrincipal {
+  font-size: 3.5rem;
+  color: #1a1a1a;
+  max-width: 900px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.destaqueTexto {
+  background: linear-gradient(to right, #7155F7, #423291);
+  color: white;
+  padding: 0 20px;
+  border-radius: 90px;
+  display: inline-block;
+}
+
+.descricaoHero {
+  color: #4c4c4c;
+  max-width: 600px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.containerIlustracao {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin-top: 20px;
+}
+
+.mockupCelular {
+  width: 280px;
+  height: 400px;
+  background: #000;
+  border-radius: 30px 30px 0 0;
+  margin: 0 auto;
+  border: 8px solid #333;
+}
+
+.videoHeroWrapper {
+  position: absolute;
+  left: 50%;
+  bottom:20px; 
+  transform: translateX(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.videoHero {
+  width: 100%;
+  max-width: 1060px;
+  height: 540px;
+  border-radius: 24px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+}
+

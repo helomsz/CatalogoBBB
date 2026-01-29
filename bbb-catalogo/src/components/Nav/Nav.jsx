@@ -20,14 +20,14 @@ export default function Navbar() {
 
         <ul className="listaLinks">
           <li><a href="#hero" className="linkNavegacao">Início</a></li>
-          <li><a href="#about" className="linkNavegacao">Sobre</a></li>
-          <li><a href="#services" className="linkNavegacao">Serviços</a></li>
-          <li><a href="#testimonials" className="linkNavegacao">Depoimentos</a></li>
+          <li><a href="#about" className="linkNavegacao">Participantes</a></li>
+          <li><a href="#services" className="linkNavegacao">Momentos Icônicos</a></li>
+          <li><a href="#testimonials" className="linkNavegacao">Edições</a></li>
         </ul>
 
         <div className="botaoFavorio">
-            <Heart/>
-            <a href="#">Favoritos</a>
+            <Heart  size={17} fill="#CC2985" className="iconeCoracao"/>
+            <a href="#" className="favoritosNav">Favoritos</a>
         </div>
 
 
