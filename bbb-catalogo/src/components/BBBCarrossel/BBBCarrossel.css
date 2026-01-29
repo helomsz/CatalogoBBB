@@ -1,0 +1,119 @@
+.carrosselBBB {
+  padding: 80px 0;
+}
+
+.carrosselContainer {
+  display: flex;
+  gap: 28px;
+  overflow-x: auto;
+  padding: 20px 40px;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 0 50%;
+}
+
+.carrosselContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.cardEdicao {
+  position: relative;
+  min-width: 760px;
+  height: 480px;
+
+  border-radius: 28px;
+  overflow: hidden;
+
+  background-size: cover;
+  background-position: center;
+
+  scroll-snap-align: start;
+
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.35);
+  transition: transform 0.3s ease;
+  opacity: 0.5;
+  transform: scale(0.92);
+  transition: all 0.6s ease;
+}
+
+.cardEdicao:hover {
+  transform: scale(1.04);
+}
+
+.cardEdicao.ativo {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 2;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0.15)
+  );
+}
+
+
+.cardConteudo {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  right: 24px;
+
+  color: #fff;
+  z-index: 2;
+}
+
+.cardConteudo h3 {
+  font-size: 1.6rem;
+  margin-bottom: 14px;
+}
+
+.infoLinha {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.campeao {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  font-weight: 600;
+}
+
+.campeao svg {
+  color: gold;
+}
+
+.apresentadorTag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  padding: 6px 12px;
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(10px);
+
+  font-size: 0.75rem;
+}
+
+.metaLinha {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 12px;
+  font-size: 0.8rem;
+  opacity: 0.85;
+}
+
+.metaLinha span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
