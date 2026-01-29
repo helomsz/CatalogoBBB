@@ -1,0 +1,18 @@
+.secaoParticipantes {
+    margin-top: 6%;
+    align-items: center;
+    text-align: center;
+}
+
+.primeiraLinha,
+.segundaLinha,
+.terceiraLinha,
+.quartaLinha {
+    display: flex;
+    gap: 8rem;
+    justify-content: center;
+}
+
+.cardsParticipantes img {
+    width: 400px;
+}
