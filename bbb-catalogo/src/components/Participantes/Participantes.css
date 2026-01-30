@@ -15,10 +15,26 @@
 
 .cardsParticipantes img {
     width: 400px;
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.35);
-    transition: 0.3s;
 }
 
-.cardsParticipantes img:hover{
-    transform: scale(1.06);
+.primeiraLinha > div,
+.segundaLinha > div,
+.terceiraLinha > div,
+.quartaLinha > div {
+  position: relative;
 }
+
+/* variação da tag para cards */
+.bbbTag--card {
+  position: absolute;
+  bottom: 6.4rem;
+  right: 16px;
+  padding: 6px 12px;
+  font-size: 0.70rem;
+  gap: 6px;
+  border-radius: 999px;
+  box-shadow:
+    0 6px 18px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(8px);
+}
+

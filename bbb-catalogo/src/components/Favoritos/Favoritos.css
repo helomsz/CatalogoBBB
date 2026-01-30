@@ -1,0 +1,21 @@
+.favoritoBtn {
+  position: absolute;
+  top: 50px;
+  right: 30px;
+  background: rgba(219, 219, 219, 0.15);
+  border: none;
+  border-radius: 50%;
+  padding: 6px;
+  cursor: pointer;
+  border: 1px solid #ffffff4b;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.favoritoBtn:hover {
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.301);
+}
+
+.favoritoBtn.ativo {
+  background: rgba(219, 219, 219, 0.15);
+}

@@ -12,32 +12,148 @@ import Jade from "../../assets/participantes/jade.png"
 import Sabrina from "../../assets/participantes/sabrina.png"
 import Gil from "../../assets/participantes/gil.png"
 import Ana from "../../assets/participantes/ana.png"
+import { Leaf, Star, Flame, Heart, Brain, Tv } from "lucide-react";
+import Favorito from "../Favoritos/Favoritos";
 
-export default function Participantes(){
+//define variavel para relacionar os participantes com as categorias para filtragem
+
+export default function Participantes({ filtro }){
     return(
         <section className="secaoParticipantes">
             <div className="containerCards">
                 <h2>Participantes</h2>
                 <section className="cardsParticipantes">
+
                     <div className="primeiraLinha">
-                        <img src={Juliette} alt="Card da participante Juliette"/>
-                        <img src={Ana} alt="Card da participante Ana Paula Renault"/>
-                        <img src={Manu} alt="Card da participante Manu Gavassi"/>
+                        {(!filtro || filtro === "favorito") && (
+                            <div>
+                                <Favorito />
+                                <img src={Juliette} alt="Card da participante Juliette" />
+                                <div className="bbbTag favorito bbbTag--card">
+                                    <Heart size={12} />
+                                    <span>Favorito do público</span>
+                                </div>
+                            </div>
+                        )}
+                        {(!filtro || filtro === "treta") && (
+                            <div>
+                                <Favorito />
+                                <img src={Ana} alt="Card do participante Ana Paula Renault"/>
+                                <div className="bbbTag treta bbbTag--card">
+                                    <Flame size={12} />
+                                    <span>Treta</span>
+                                </div>
+                            </div>
+                        )}
+                        {(!filtro || filtro === "protagonista") && (
+                            <div>
+                                <Favorito />
+                                <img src={Manu} alt="Card do participante Manu Gavassi"/>
+                                <div className="bbbTag protagonista bbbTag--card">
+                                    <Star size={12} />
+                                    <span>Protagonista</span>
+                                </div>
+                            </div>
+                        )}
                     </div>
+
                     <div className="segundaLinha">
-                        <img src={Davi} alt="Card do participante Davi Brito"/>
-                        <img src={Karol} alt="Card da participante Karol Conká"/>
-                        <img src={Grazi} alt="Card da participante Grazi Massafera"/>
+                        {(!filtro || filtro === "treta") && (
+                            <div>
+                                <Favorito />
+                                <img src={Davi} alt="Card da participante Davi Brito"/>
+                                <div className="bbbTag treta bbbTag--card">
+                                    <Flame size={12} />
+                                    <span>Treta</span>
+                                </div>
+                            </div>
+                        )}
+                        {(!filtro || filtro === "treta") && (
+                            <div>
+                                <Favorito />
+                                <img src={Karol} alt="Card do participante Karol Conká"/>
+                                <div className="bbbTag treta bbbTag--card">
+                                    <Flame size={12} />
+                                    <span>Treta</span>
+                                </div>
+                            </div>
+                        )}
+                        {(!filtro || filtro === "protagonista") && (
+                            <div>
+                                <Favorito />
+                                <img src={Grazi} alt="Card do participante Grazi Massafera"/>
+                                <div className="bbbTag protagonista bbbTag--card">
+                                    <Star size={12} />
+                                    <span>Protagonista</span>
+                                </div>
+                            </div>
+                        )}
                     </div>
+
                     <div className="terceiraLinha">
-                        <img src={Jade} alt="Card da participante Jade Picon"/>
-                        <img src={Gil} alt="Card do participante Gil do Vigor"/>
-                        <img src={Babu} alt="Card do participante Babu Santana"/>
+                        {(!filtro || filtro === "estrategia") && (
+                            <div>
+                                <Favorito />
+                                <img src={Jade} alt="Card da participante Jade Picon"/>
+                                <div className="bbbTag estrategia bbbTag--card">
+                                    <Brain size={12} />
+                                    <span>Estrategista</span>
+                                </div>
+                            </div>
+                        )}
+                        {(!filtro || filtro === "vtzeiro") && (
+                            <div>
+                                <Favorito />
+                                <img src={Gil} alt="Card do participante Gil do Vigor"/>
+                                <div className="bbbTag vtzeiro bbbTag--card">
+                                    <Tv size={12} />
+                                    <span>Vtzeiro</span>
+                                </div>
+                            </div>
+                        )}
+                        {(!filtro || filtro === "planta") && (
+                            <div>
+                                <Favorito />
+                                <img src={Babu} alt="Card do participante Babu Santana"/>
+                                <div className="bbbTag planta bbbTag--card">
+                                    <Leaf size={12} />
+                                    <span>Planta</span>
+                                </div>
+                            </div>
+                            )}
                     </div>
+
                     <div className="quartaLinha">
-                        <img src={Sabrina} alt="Card da participante Sabrina Sato"/>
-                        <img src={Vyni} alt="Card do participante Vyni"/>
-                        <img src={Vanessa} alt="Card da participante Vanessa Lopes"/>
+                        {(!filtro || filtro === "favorito") && (
+                            <div>
+                                <Favorito />
+                                <img src={Sabrina} alt="Card da participante Sabrina Sato"/>
+                                <div className="bbbTag favorito bbbTag--card">
+                                    <Heart size={12} />
+                                    <span>Favorito do público</span>
+                                </div>
+                            </div>
+                        )}
+                        {(!filtro || filtro === "vtzeiro") && (
+                            <div>
+                                <Favorito />
+                                <img src={Vyni} alt="Card do participante Vyni"/>
+                                <div className="bbbTag vtzeiro bbbTag--card">
+                                    <Tv size={12} />
+                                    <span>Vtzeiro</span>
+                                </div>
+                            </div>
+                        )}
+                        {(!filtro || filtro === "planta") && (
+                            <div>
+                                <Favorito />
+                                <img src={Vanessa} alt="Card do participante Vanessa Lopes"/>
+                                <div className="bbbTag planta bbbTag--card">
+                                    <Leaf size={12} />
+                                    <span>Planta</span>
+                                </div>
+                            </div>
+                        )}
                     </div>
                 </section>
             </div>
