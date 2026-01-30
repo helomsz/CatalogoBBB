@@ -21,13 +21,13 @@ export default function Participantes(){
                 <section className="cardsParticipantes">
                     <div className="primeiraLinha">
                         <img src={Juliette} alt="Card da participante Juliette"/>
-                        <img src={Ana} alt="Card do participante Ana Paula Renault"/>
-                        <img src={Manu} alt="Card do participante Manu Gavassi"/>
+                        <img src={Ana} alt="Card da participante Ana Paula Renault"/>
+                        <img src={Manu} alt="Card da participante Manu Gavassi"/>
                     </div>
                     <div className="segundaLinha">
-                        <img src={Davi} alt="Card da participante Davi Brito"/>
-                        <img src={Karol} alt="Card do participante Karol Conká"/>
-                        <img src={Grazi} alt="Card do participante Grazi Massafera"/>
+                        <img src={Davi} alt="Card do participante Davi Brito"/>
+                        <img src={Karol} alt="Card da participante Karol Conká"/>
+                        <img src={Grazi} alt="Card da participante Grazi Massafera"/>
                     </div>
                     <div className="terceiraLinha">
                         <img src={Jade} alt="Card da participante Jade Picon"/>
@@ -37,7 +37,7 @@ export default function Participantes(){
                     <div className="quartaLinha">
                         <img src={Sabrina} alt="Card da participante Sabrina Sato"/>
                         <img src={Vyni} alt="Card do participante Vyni"/>
-                        <img src={Vanessa} alt="Card do participante Vanessa Lopes"/>
+                        <img src={Vanessa} alt="Card da participante Vanessa Lopes"/>
                     </div>
                 </section>
             </div>
