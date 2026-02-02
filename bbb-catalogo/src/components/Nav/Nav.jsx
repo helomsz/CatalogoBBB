@@ -19,10 +19,10 @@ export default function Navbar() {
         </div>
 
         <ul className="listaLinks">
-          <li><a href="#hero" className="linkNavegacao">Início</a></li>
-          <li><a href="#about" className="linkNavegacao">Participantes</a></li>
-          <li><a href="#services" className="linkNavegacao">Momentos Icônicos</a></li>
-          <li><a href="#testimonials" className="linkNavegacao">Edições</a></li>
+          <li><a href="#1" className="linkNavegacao">Início</a></li>
+          <li><a href="#2" className="linkNavegacao">Participantes</a></li>
+          <li><a href="#3" className="linkNavegacao">Momentos Icônicos</a></li>
+          <li><a href="#4" className="linkNavegacao">Edições</a></li>
         </ul>
 
         <div className="botaoFavorio">

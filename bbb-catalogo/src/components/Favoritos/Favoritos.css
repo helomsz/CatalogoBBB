@@ -5,6 +5,8 @@
   background: rgba(219, 219, 219, 0.15);
   border: none;
   border-radius: 50%;
+  width: 35px;
+  height: 35px;
   padding: 6px;
   cursor: pointer;
   border: 1px solid #ffffff4b;

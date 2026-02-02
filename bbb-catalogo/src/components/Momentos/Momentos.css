@@ -1,0 +1,75 @@
+.momentos {
+  padding: 4rem 2rem;
+  margin-top: 90px;
+  background-color: #f7f7f7;
+}
+
+.momentos-title {
+  text-align: center;
+}
+
+.momentos-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  max-width: 1400px; 
+  margin: 0 auto;
+}
+
+.momento-card {
+  background: #ffffff;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.momento-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.12);
+}
+
+.momento-image {
+  height: 180px;
+  margin: 5px;
+  border-radius: 25px;
+  object-fit: cover;
+  background: linear-gradient(135deg, #e0e0e0, #cfcfcf);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.momento-content {
+  padding: 1.5rem;
+}
+
+.linhaCard{
+    display: flex;
+    align-items: center;
+    gap: 53px;
+}
+.momento-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.momento-content h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+}
+
+.momento-content p {
+  font-size: 0.95rem;
+  color: #666;
+}

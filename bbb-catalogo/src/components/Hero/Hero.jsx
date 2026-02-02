@@ -5,7 +5,7 @@ import {Leaf, Star, Flame, Heart, Brain } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="secaoHero">
+    <section id="1" className="secaoHero">
       <div className="containerPrincipal">
         {/* Badge superior */}
         <div className="etiquetaDestaque">

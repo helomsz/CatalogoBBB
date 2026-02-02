@@ -1031,7 +1031,7 @@ const BBBCarrossel = () => {
   };
 
   return (
-    <section className="secao carrosselBBB">
+    <section id="4" className="secao carrosselBBB">
       <h2 className="secaoTituloEdicoes">Edições do BBB</h2>
 
       <div className="carrosselContainer" ref={containerRef}>

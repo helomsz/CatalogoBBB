@@ -19,7 +19,7 @@ import Favorito from "../Favoritos/Favoritos";
 
 export default function Participantes({ filtro }){
     return(
-        <section className="secaoParticipantes">
+        <section id="2" className="secaoParticipantes">
             <div className="containerCards">
                 <h2>Participantes</h2>
                 <section className="cardsParticipantes">
