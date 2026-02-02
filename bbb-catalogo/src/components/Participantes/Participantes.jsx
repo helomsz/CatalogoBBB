@@ -17,7 +17,7 @@ import Favorito from "../Favoritos/Favoritos";
 
 //define variavel para relacionar os participantes com as categorias para filtragem
 
-export default function Participantes({ filtro }){
+export default function Participantes({ filtro, favoritos, toggleFavorito  }){
     return(
         <section id="2" className="secaoParticipantes">
             <div className="containerCards">
@@ -27,7 +27,8 @@ export default function Participantes({ filtro }){
                     <div className="primeiraLinha">
                         {(!filtro || filtro === "favorito") && (
                             <div>
-                                <Favorito />
+                                <Favorito ativo={favoritos.includes("juliette")}
+                                onClick={() => toggleFavorito("juliette")} />
                                 <img src={Juliette} alt="Card da participante Juliette" />
                                 <div className="bbbTag favorito bbbTag--card">
                                     <Heart size={12} />
@@ -37,7 +38,8 @@ export default function Participantes({ filtro }){
                         )}
                         {(!filtro || filtro === "treta") && (
                             <div>
-                                <Favorito />
+                                <Favorito ativo={favoritos.includes("ana")}
+                                onClick={() => toggleFavorito("ana")} />
                                 <img src={Ana} alt="Card do participante Ana Paula Renault"/>
                                 <div className="bbbTag treta bbbTag--card">
                                     <Flame size={12} />
@@ -47,7 +49,8 @@ export default function Participantes({ filtro }){
                         )}
                         {(!filtro || filtro === "protagonista") && (
                             <div>
-                                <Favorito />
+                                <Favorito ativo={favoritos.includes("manu")}
+                                onClick={() => toggleFavorito("manu")} />
                                 <img src={Manu} alt="Card do participante Manu Gavassi"/>
                                 <div className="bbbTag protagonista bbbTag--card">
                                     <Star size={12} />
@@ -60,7 +63,8 @@ export default function Participantes({ filtro }){
                     <div className="segundaLinha">
                         {(!filtro || filtro === "treta") && (
                             <div>
-                                <Favorito />
+                                <Favorito ativo={favoritos.includes("davi")}
+                                onClick={() => toggleFavorito("davi")}/>
                                 <img src={Davi} alt="Card da participante Davi Brito"/>
                                 <div className="bbbTag treta bbbTag--card">
                                     <Flame size={12} />
@@ -70,7 +74,8 @@ export default function Participantes({ filtro }){
                         )}
                         {(!filtro || filtro === "treta") && (
                             <div>
-                                <Favorito />
+                                <Favorito ativo={favoritos.includes("karol")}
+                                onClick={() => toggleFavorito("karol")} />
                                 <img src={Karol} alt="Card do participante Karol Conká"/>
                                 <div className="bbbTag treta bbbTag--card">
                                     <Flame size={12} />
@@ -80,7 +85,8 @@ export default function Participantes({ filtro }){
                         )}
                         {(!filtro || filtro === "protagonista") && (
                             <div>
-                                <Favorito />
+                                <Favorito ativo={favoritos.includes("grazi")}
+                                onClick={() => toggleFavorito("grazi")} />
                                 <img src={Grazi} alt="Card do participante Grazi Massafera"/>
                                 <div className="bbbTag protagonista bbbTag--card">
                                     <Star size={12} />
@@ -93,7 +99,8 @@ export default function Participantes({ filtro }){
                     <div className="terceiraLinha">
                         {(!filtro || filtro === "estrategia") && (
                             <div>
-                                <Favorito />
+                                <Favorito ativo={favoritos.includes("jade")}
+                                onClick={() => toggleFavorito("jade")} />
                                 <img src={Jade} alt="Card da participante Jade Picon"/>
                                 <div className="bbbTag estrategia bbbTag--card">
                                     <Brain size={12} />
@@ -103,7 +110,8 @@ export default function Participantes({ filtro }){
                         )}
                         {(!filtro || filtro === "vtzeiro") && (
                             <div>
-                                <Favorito />
+                                <Favorito ativo={favoritos.includes("gil")}
+                                onClick={() => toggleFavorito("gil")} />
                                 <img src={Gil} alt="Card do participante Gil do Vigor"/>
                                 <div className="bbbTag vtzeiro bbbTag--card">
                                     <Tv size={12} />
@@ -113,7 +121,8 @@ export default function Participantes({ filtro }){
                         )}
                         {(!filtro || filtro === "planta") && (
                             <div>
-                                <Favorito />
+                                <Favorito ativo={favoritos.includes("babu")}
+                                onClick={() => toggleFavorito("babu")} />
                                 <img src={Babu} alt="Card do participante Babu Santana"/>
                                 <div className="bbbTag planta bbbTag--card">
                                     <Leaf size={12} />
@@ -126,7 +135,8 @@ export default function Participantes({ filtro }){
                     <div className="quartaLinha">
                         {(!filtro || filtro === "favorito") && (
                             <div>
-                                <Favorito />
+                                <Favorito ativo={favoritos.includes("sabrina")}
+                                onClick={() => toggleFavorito("sabrina")} />
                                 <img src={Sabrina} alt="Card da participante Sabrina Sato"/>
                                 <div className="bbbTag favorito bbbTag--card">
                                     <Heart size={12} />
@@ -136,7 +146,8 @@ export default function Participantes({ filtro }){
                         )}
                         {(!filtro || filtro === "vtzeiro") && (
                             <div>
-                                <Favorito />
+                                <Favorito ativo={favoritos.includes("vyni")}
+                                onClick={() => toggleFavorito("vyni")}/>
                                 <img src={Vyni} alt="Card do participante Vyni"/>
                                 <div className="bbbTag vtzeiro bbbTag--card">
                                     <Tv size={12} />
@@ -146,7 +157,8 @@ export default function Participantes({ filtro }){
                         )}
                         {(!filtro || filtro === "planta") && (
                             <div>
-                                <Favorito />
+                                <Favorito ativo={favoritos.includes("vanessa")}
+                                onClick={() => toggleFavorito("vanessa")}/>
                                 <img src={Vanessa} alt="Card do participante Vanessa Lopes"/>
                                 <div className="bbbTag planta bbbTag--card">
                                     <Leaf size={12} />

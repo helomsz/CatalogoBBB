@@ -3,7 +3,7 @@ import { Menu, X, Heart } from "lucide-react";
 import logoBBB from '../../assets/logobbb.png';
 import "./Nav.css";
 
-export default function Navbar() {
+export default function Navbar({ quantidadeFavoritos }) {
   const [aberto, setAberto] = useState(false);
 
   return (
@@ -26,8 +26,14 @@ export default function Navbar() {
         </ul>
 
         <div className="botaoFavorio">
-            <Heart  size={17} fill="#CC2985" className="iconeCoracao"/>
-            <a href="#" className="favoritosNav">Favoritos</a>
+          {quantidadeFavoritos > 0 ? (
+            <span className="contadorFavoritos">
+              {quantidadeFavoritos}
+            </span>
+          ) : (
+            <Heart size={17} fill="#CC2985" className="iconeCoracao" />
+          )}
+          <a href="#2" className="favoritosNav">Favoritos</a>
         </div>
 
 

@@ -1,20 +1,17 @@
 import { Heart } from "lucide-react";
-import { useState } from "react";
 import "./Favoritos.css";
 
-export default function Favorito() {
-  const [favorito, setFavorito] = useState(false);
-
+export default function Favorito({ ativo, onClick }) {
   return (
     <button
-      className={`favoritoBtn ${favorito ? "ativo" : ""}`}
-      onClick={() => setFavorito(!favorito)}
+      className={`favoritoBtn ${ativo ? "ativo" : ""}`}
+      onClick={onClick}
       aria-label="Favoritar participante"
     >
       <Heart
         size={20}
-        fill={favorito ? "#ffffffff" : "none"}
-        color={favorito ? "#ffffffff" : "#ffffffff"}
+        fill={ativo ? "#ffffff" : "none"}
+        color="#ffffff"
       />
     </button>
   );
