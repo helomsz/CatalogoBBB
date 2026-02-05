@@ -27,4 +27,4 @@ A aplicação reúne participantes, momentos icônicos e um carrossel com todas 
 
 ---
 
-> Feito por Heloisa Militão e Isadora Abreu
+> Feito por Heloisa Militão e Isadora Abreu 👩🏾‍💻 🩷 👩🏻‍💻
